@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/cetlibTargets.cmake")
+
+set_and_check(cetlib_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+set_and_check(cetlib_LIBRARY_DIR  "@PACKAGE_CMAKE_INSTALL_LIBDIR@")
+
+check_required_components(cetlib)
